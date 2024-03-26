@@ -1,0 +1,117 @@
+*, *::before, *::after{
+	box-sizing: inherit;
+	box-sizing: border-box;
+}
+:root{
+	--color-card:#2B4259;
+	--color-white: #ffffff;
+	--color-title: #FF9292;
+	--color-footer: #2F303A;
+	--color-address: #757575;
+	--font-family: "Roboto", sans-serif ;
+
+}
+.header{
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+.hero-title{
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+body{
+	background-color: #34495E;
+}
+.flex-element{
+	display: flex;
+	align-items: center;
+}
+.nav-list{
+	display: flex;
+}
+.logo-title{
+	margin-right: 335px;
+}
+.logo-title,.logo-title-contacts{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 26px;
+	letter-spacing: 0.02em;
+	color: var(--color-title);
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	outline: 1px dotted tomato
+}
+.pizza-image{
+	border-radius: 9px;
+}
+.menu-nav{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	color: var(--color-white);
+	margin-right: 40px;
+}
+.menu-nav:not(:last-child){
+	margin-right: 40px;
+}
+.hero{
+	padding-top: 94px;
+}
+.menu-text{
+display: flex;
+font-family: var(--font-family);
+font-weight: 300;
+font-size: 16px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #fff;
+margin-top: 20px;
+}
+.menu-list{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap:50px;
+	row-gap: 60px;
+}
+.card{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--color-card);
+	width: 370px;
+	border-radius: 9px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+/* .address{
+	margin-top: 20px; 
+} */
+.opening{
+	display: flex;
+}
+.address-item,.item-address-tel, .item-address-email:not(:last-child){
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	color: var(--color-address);
+	/* margin-bottom: 10px; */
+}
+.item-address-tel, .item-address-email{
+	color: var(--color-address);
+}
+.footer{
+	padding-top: 44px;
+	padding-bottom: 84px;
+	background-color: var(--color-footer);
+}
