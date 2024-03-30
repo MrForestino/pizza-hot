@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
 	<link rel="stylesheet" href="Styles/reset.css">
 	<link rel="stylesheet" href="Styles/style.css">
 	<title>PIZZA-HOT</title>
@@ -15,16 +16,16 @@
 <body>
 	<header class="header">
 		<div class="container flex-element">
-			<a class="link-title" href="/"><span class="logo-title">PIZZA-HOT</span></a>
+			<a class="link-logo" href="/"><span class="logo-title">PIZZA-HOT</span></a>
 			<nav class="nav">
 				<ul class="nav-list">
-					<a href="#hero">
+					<a class="link-list" href="#hero">
 						<li class="menu-nav">MENU</li>
 					</a>
-					<a href="#contacts">
+					<a class="link-list" href="#contacts">
 						<li class="menu-nav">KONTAKT</li>
 					</a>
-					<a href="#informations">
+					<a class="link-list" href="#informations">
 						<li class="menu-nav">INFO</li>
 					</a>
 				</ul>
@@ -113,7 +114,9 @@
 			</div>
 		</section>
 		<section class="your-choice">
-			<h2 class="your-choice-title">TWÓJ WYBÓR</h2>
+			<div class="container">
+				<h2 class="your-choice-title">TWÓJ WYBÓR</h2>
+			</div>
 		</section>
 	</main>
 	<footer class="footer" id="contacts">
