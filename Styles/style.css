@@ -8,6 +8,7 @@
 	--color-title: #FF9292;
 	--color-footer: #2F303A;
 	--color-address: #757575;
+	--color-bg:#34495E;
 	--font-family: "Roboto", sans-serif ;
 
 }
@@ -18,16 +19,22 @@ body{
 .header{
 	padding-top: 24px;
 	padding-bottom: 25px;
-
+	background-color: var(--color-bg);
 }
 .flex-element{
 	display: flex;
 	align-items: center;
+	
+	padding:15px 24px 25px;
+
 }
 .nav-list{
 	display: flex;
+	position: fixed;
+	background-color: var(--color-bg);
 }
 .link-logo{
+
 	margin-right: 335px;
 }
 .logo-title,.logo-title-contacts{
@@ -204,9 +211,13 @@ margin-top: 10px;
 .opening-container{
 	text-align: center;
 }
-.address{
-	margin-right: 290px;
+.footer-item{
+	display: flex;
+	justify-content: space-between;
 }
+/* .address{
+	margin-right: 290px;
+} */
 .address-item,.item-address-tel, .item-address-email:not(:last-child){
 	font-family: var(--font-family);
 	font-weight: 500;
