@@ -1,0 +1,192 @@
+:root{
+	--color-red:#CD4F41;
+	--color-dark-green:#1C404C;
+	--color-green:#2D8078;
+	--color-green-card:#234A57;
+	--color-border-yellow-card:#DE9E46;
+	--color-yellow:#F6CB86;
+	--color-background:#F4D9AE;
+	--color-white: #ffffff;
+	--color-address:#757575;
+	--font-regular: 'Berlin Sans FB Regular'; 
+	--font-bold: 'Berlin Sans FB Bold';
+}
+body{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: var(--font-regular);
+	background-color: var(--color-background);
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px dotted tomato;
+}
+/*---- HEADER ----*/
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: var(--color-yellow);
+	padding-top: 25px;
+	padding-bottom: 26px;
+}
+.header-body{
+	display: flex;
+}
+.header-list{
+	display: flex;
+}
+.logo-title, .logo-title-contacts{
+	font-size: 26px;
+	letter-spacing: 0.25em;
+	color: var(--color-red);
+}
+.header-link{
+letter-spacing: 0.25em;
+color: var(--color-dark-green);
+}
+.header-body{
+	display: flex;
+	justify-content: space-between;
+}
+.header-item:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	/* transition: transform 0.25s; */
+}
+.header-item:not(:last-child){
+	margin-right: 30px;
+}
+/*---- MAIN ----*/
+.hero{
+	padding-top: 90px;
+}
+.hero-title, .info-title,.your-choice-title{
+	font-family: var(--font-regular);
+	font-size: 44px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	color: var(--color-green);
+}
+.hero-title,.your-choice-title{
+	text-shadow: 4px 0px 0px var(--color-dark-green);
+	margin-bottom: 56px;
+}
+.menu-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+}
+.menu-item{
+	display: flex;
+	justify-content: center;
+	width: 270px;
+	height: 368px;
+	border-radius: 10px;
+	background-color: var(--color-yellow);
+	box-shadow: 8px -8px 0px var(--color-border-yellow-card);
+}
+/* .menu-item:hover{
+	box-shadow: 8px -8px 0px var(--color-border-yellow-card);
+} */
+.pizza-image{
+	margin-top: 21px;
+	border-radius: 10px;
+}
+
+.menu-card-title,.choice-card-title{
+	font-family: var(--font-bold);
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-align: center;
+	color: var(--color-green);
+	margin-top: 30px;
+}
+
+.informations{
+	margin-top: 90px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: var(--color-green);
+}
+
+.info-title{
+	color: var(--color-white);
+}
+.flex-info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.your-choice{
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+.choice-card{
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	width: 300px;
+	height: 407px;
+	border-radius: 10px;
+	background-color: var(--color-dark-green);
+}
+.choice-menu{
+	display: flex;
+	justify-content: center;
+	width: 270px;
+	height: 368px;
+	border-radius: 10px;
+	background-color: var(--color-green-card);
+}
+.choice-card-title{
+	color: var(--color-white);
+}
+/*----- FOOTER -----*/
+.footer{
+	padding-top: 50px;
+	padding-bottom: 70px;
+	background-color: var(--color-dark-green);
+}
+.footer-item{
+	display: flex;
+	justify-content: space-between;
+}
+.address{
+	margin-top: 20px;
+}
+.address-item:not(:last-child){
+	margin-bottom: 10px;
+}
+.address-item, .item-address-email,.item-address-tel{
+	color: var(--color-address);
+}
+.opening{
+	display: flex;
+	color:var(--color-white);
+}
+.opening-item:first-child{
+	margin-right: 30px;
+}
+.openning-title{
+	letter-spacing: 0.02em;
+	text-align: center;
+	color:var(--color-white);
+}
+.social-media-list{
+	display: flex;
+}
+.social-media-item:not(:last-child){
+	margin-right: 40px;
+}
+@font-face { 
+  font-family: "Berlin Sans FB Regular"; 
+  src: url("/Fonts/Berlin\ Sans\ FB\ Regular.ttf"); 
+	font-family: "Berlin Sans FB Bold"; 
+  src: url("/Fonts/Berlin\ Sans\ FB\ Bold.ttf"); 
+}
