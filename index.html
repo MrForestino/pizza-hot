@@ -16,27 +16,33 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header-body">
-				<a class="link-logo" href="/"><span class="logo-title">PIZZA-HOT</span></a>
-					<nav class="header-menu">
-						<ul class="header-list">
-							<li class="header-item">
-									<a href="#hero" class="header-link">Menu</a>
-							</li>
-							<li class="header-item">
-								<a href="#your-choice" class="header-link">Twój wybór</a>
-							</li>
-							<li class="header-item">
-								<a href="#informations" class="header-link">Info</a>
-							</li>
-							<li class="header-item">
-									<a href="#contacts" class="header-link">Kontakt</a>
-							</li>
-					</nav>
-				</div>
-			</div>
+	
+		<header class="header">
+			<div class="container">
+				<div class="header-body">
+					<a class="header-logo" href="/">
+						<span class="logo-title">PIZZA-HOT</span>
+					</a>
+					<div class="header-burger">
+						<span></span>
+					</div>
+						<nav class="header-menu">
+							<ul class="header-list">
+								<li class="header-item">
+										<a href="#hero" class="header-link">Menu</a>
+								</li>
+								<li class="header-item">
+									<a href="#your-choice" class="header-link">Twój wybór</a>
+								</li>
+								<li class="header-item">
+									<a href="#informations" class="header-link">Info</a>
+								</li>
+								<li class="header-item">
+										<a href="#contacts" class="header-link">Kontakt</a>
+								</li>
+						</nav>
+					</div>
+			</div>		
 		</header>
 	<main>
 		<section class="hero" id="hero">
@@ -121,21 +127,23 @@
 			</div>
 		</section>
 		<section class="your-choice"  id="your-choice">
-			<div class="container">
-				<h2 class="your-choice-title">Twój Wybór</h2>
-				
-				<div class=" choice-card">
-					<ul class="choice-menu">
-						<li class="choice-item">
-							<div class="card">
-								<img class="pizza-image" 
-								src="Images/margarita.jpg"
-								width="180px"
-								/>
-								<h3 class="choice-card-title">▸ Margaritta ◂</h3>
-							</div>
-						</li>
-					</ul>
+			<div class="container slider-position">
+				<h2 class="your-choice-title">
+					Twój Wybór
+				</h2>
+				<div class="slider">
+					<img class="slider-img" src="./Images/margarita.jpg"/>
+					<img class="slider-img" src="./Images/hawaii.jpg"/>
+					<img class="slider-img" src="./Images/salami.jpg"/>
+
+					<div>
+						<img class="prev controls" src="./Images/left.png"/>
+					</div>
+
+					<div>
+						<img class="next controls" src="./Images/right.png"/>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -184,6 +192,7 @@
 		</div>
 	</footer>
 	<script src="main.js"></script>
+	<script src="slider.js"></script>
 </body>
 
 </html>
