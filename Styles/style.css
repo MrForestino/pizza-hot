@@ -214,6 +214,32 @@ color: var(--color-dark-green);
 	display: none;
 }
 
+/* @media (min-width:767px){
+	body{
+		font-size: 14px;
+	}
+	.container{
+		width: 760px;
+		margin: 0 auto;
+		border: 1px dotted tomato;
+	}
+	.menu-list{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 50px;
+	}
+	.info-title{
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.social-media-item{
+		width: 40px;
+	}
+	.social-media-item:not(:last-child){
+		margin-right: 20px;
+	}
+} */
 
 
 @font-face { 
