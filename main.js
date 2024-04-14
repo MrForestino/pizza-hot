@@ -1,7 +1,6 @@
-var logo = document.querySelector('.burger-menu');
-var nav = document.querySelector('.nav');
-
-logo.addEventListener('click', function(){
-    this.classList.toggle('open');
-    nav.classList.toggle('showmenu');
+$(document).ready(function(){
+	$('.header-burger').click(function(event){
+			$('.header-burger, .header-menu').toggleClass('active');
+			$('body').toggleClass('lock')
+	});
 });
