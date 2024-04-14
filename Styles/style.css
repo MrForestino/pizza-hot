@@ -232,6 +232,9 @@ transition: all 0.3s ease 0s;
 .social-media-list{
 	display: flex;
 }
+.social-media-item:not(:last-child){
+		margin-right: 30px;
+	}
 /*---- Responsivity ----*/
 @media (max-width:767px){
 	.header-body{
