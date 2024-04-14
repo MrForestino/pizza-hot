@@ -21,7 +21,7 @@ body{
 	width: 1180px;
 	margin: 0 auto;
 	padding: 0 10px;
-	border: 1px dotted tomato;
+	/* border: 1px dotted tomato; */
 }
 /*---- HEADER ----*/
 .header{
@@ -177,18 +177,22 @@ color: var(--color-dark-green);
 .slider img{
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	/* z-index: 1; */
+	z-index: 2; 
+	left: 50%; 
+	transform: translateX(-50%) translateY(-50%);
 }
 .prev, .next{
 	opacity: 1;
-	height: 20px;
+	height: 30px;
 }
 .slider .prev{
 	left: 10px;
+	z-index: 1;
 }
 .slider .next{
-	right: 10px;
+	right: calc(100% - 174px);
+	z-index: 2;
+	transform: translateX(350%) translateY(-50%);
 }
 .choice-card-title{
 	color: var(--color-white);
@@ -230,6 +234,7 @@ color: var(--color-dark-green);
 .social-media-item:not(:last-child){
 	margin-right: 40px;
 }
+/*---- Responsivity ----*/
 @media (max-width:767px){
 	.header-body{
 		height: 40px;
@@ -306,15 +311,56 @@ color: var(--color-dark-green);
 		font-size: 14px;
 	}
 	.container{
-		width: 760px;
+		width: 90%;
 		margin: 0 auto;
-		border: 1px dotted tomato;
+	}
+	.menu-card-title,.choice-card-title{
+		font-family: var(--font-regular);
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-align: center;
+		color: var(--color-green);
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	.info-open-list{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.social-media-list{
+		display: flex;
+		flex-direction: column;
+	}
+	.social-media-item:not(:last-child){
+		margin-bottom: 10px;
+	}
+	.address-element{
+		font-family: var(--font-regular);
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.opening-container{
+		padding-top: 30px;
+	}
+	.opening{
+		font-family: var(--font-regular);
+		font-size: 18px;
 	}
 	.menu-list{
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		gap: 50px;
+	}
+	.menu-item{
+		display: flex;
+		justify-content: center;
+		width: 240px;
+		height: 320px;
+		border-radius: 10px;
+		background-color: var(--color-yellow);
+		box-shadow: 8px -8px 0px var(--color-border-yellow-card);
 	}
 	.info-title{
 		font-size: 36px;
