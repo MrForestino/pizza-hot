@@ -9,7 +9,6 @@
 	--color-white: #ffffff;
 	--color-address:#757575;
 	--font-regular: 'Berlin Sans FB Regular'; 
-	--font-bold: 'Berlin Sans FB Bold';
 }
 body{
 	font-size: 18px;
@@ -70,12 +69,12 @@ body{
 .header-link{
 letter-spacing: 0.25em;
 color: var(--color-dark-green);
+transition: all 0.3s ease 0s;
 }
 .header-item:hover{
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
 	text-underline-offset: 4px;
-	/* transition: transform 0.25s; */
 }
 .header-item:not(:last-child){
 	margin-right: 30px;
@@ -120,7 +119,7 @@ color: var(--color-dark-green);
 }
 
 .menu-card-title,.choice-card-title{
-	font-family: var(--font-bold);
+	font-family: var(--font-regular);
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	text-align: center;
@@ -209,6 +208,8 @@ color: var(--color-dark-green);
 }
 .address{
 	margin-top: 20px;
+	font-family: var(--font-regular);
+	font-weight: 700;
 }
 .address-item:not(:last-child){
 	margin-bottom: 10px;
@@ -230,9 +231,6 @@ color: var(--color-dark-green);
 }
 .social-media-list{
 	display: flex;
-}
-.social-media-item:not(:last-child){
-	margin-right: 40px;
 }
 /*---- Responsivity ----*/
 @media (max-width:767px){
@@ -338,7 +336,7 @@ color: var(--color-dark-green);
 	.address-element{
 		font-family: var(--font-regular);
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 1em;
 	}
 	.opening-container{
 		padding-top: 30px;
@@ -368,15 +366,26 @@ color: var(--color-dark-green);
 	}
 	.social-media-item{
 		width: 40px;
-	}
-	.social-media-item:not(:last-child){
-		margin-right: 20px;
+		
 	}
 }
-
+@media (max-width: 425px) {
+	.address,.opening-item, h3{
+		font-size: 10px;
+	}
+	.social-media-item{
+	width: 25px;
+	}
+	.informations-item,.info-open-list{
+		font-size: 12px;
+	}
+	.footer{
+		padding-top: 50px;
+		padding-bottom: 30px;
+		background-color: var(--color-dark-green);
+	}
+}
 @font-face { 
   font-family: "Berlin Sans FB Regular"; 
   src: url("./Fonts/Berlin\ Sans\ FB\ Regular.ttf"); 
-	font-family: "Berlin Sans FB Bold"; 
-  src: url("./Fonts/Berlin\ Sans\ FB\ Bold.ttf"); 
 }
